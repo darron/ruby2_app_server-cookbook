@@ -29,6 +29,11 @@ task :rubocop do
   sh 'bundle exec rubocop'
 end
 
+desc "Build AMI using Packer"
+task :build do
+  sh 'rm -rf vendor/cookbooks; berks install --path vendor/cookbooks; packer build template.json'
+end
+
 begin
   require "kitchen/rake_tasks"
   Kitchen::RakeTasks.new
