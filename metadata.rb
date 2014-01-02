@@ -10,3 +10,4 @@ recipe           'ruby2-app-server::default', 'Installs/configures Ruby 2.0 / Ap
 depends 'build-essential'
 depends 'ruby2'
 depends 'apache2'
+depends 'passenger-apache2'

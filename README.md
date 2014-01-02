@@ -1,4 +1,4 @@
-Skeleton Cookbook
+Apache / Passenger / Ruby 2.0 App Server Cookbook
 =================
 
 Requirements
@@ -6,23 +6,31 @@ Requirements
 
 ### Platform:
 
-*List supported platforms here*
+Ubuntu 12.0.4LTS
 
 ### Cookbooks:
 
-*List cookbook dependencies here*
+apt
+build-essential
+ruby2
+apache2
+passenger-apache2
 
 Attributes
 ----------
 
-*List attributes here*
+```
+default['apache']['contact']           = 'ops@example.com'
+```
+
+There are logs of attribuiltes in the [apache2](https://github.com/opscode-cookbooks/apache2) cookbook.
 
 Recipes
 -------
 
 ### ruby2-app-server::default
 
-*Explain what the recipe does here*
+Builds a Passenger app server with Ruby 2.0.
 
 Testing
 -------

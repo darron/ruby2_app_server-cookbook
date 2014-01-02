@@ -23,3 +23,5 @@ include_recipe 'build-essential::default'
 include_recipe 'ruby2::default'
 
 include_recipe 'apache2::default'
+
+include_recipe 'passenger-apache2::default'
