@@ -6,3 +6,7 @@ license          'Apache 2.0'
 description      'Installs/configures something'
 version          '0.1.0'
 recipe           'ruby2-app-server::default', 'Installs/configures something'
+
+depends 'build-essential'
+depends 'ruby2'
+depends 'apache2'

@@ -18,4 +18,8 @@
 # limitations under the License.
 #
 
-# Install/configure something here
+include_recipe 'build-essential::default'
+
+include_recipe 'ruby2::default'
+
+include_recipe 'apache2::default'
