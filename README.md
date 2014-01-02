@@ -10,11 +10,11 @@ Ubuntu 12.0.4LTS
 
 ### Cookbooks:
 
-apt
-build-essential
-ruby2
-apache2
-passenger-apache2
+    apt
+    build-essential
+    ruby2
+    apache2
+    passenger-apache2
 
 Attributes
 ----------
@@ -23,7 +23,7 @@ Attributes
 default['apache']['contact']           = 'ops@example.com'
 ```
 
-There are logs of attribuiltes in the [apache2](https://github.com/opscode-cookbooks/apache2) cookbook.
+There are lots of attributes in the [apache2](https://github.com/opscode-cookbooks/apache2) cookbook.
 
 Recipes
 -------
