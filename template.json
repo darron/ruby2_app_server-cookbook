@@ -1,0 +1,24 @@
+{
+    "variables": {
+        "aws_access_key": "",
+        "aws_secret_key": ""
+    },
+
+    "builders": [{
+            "type": "amazon-ebs",
+            "access_key": "{{user `aws_access_key`}}",
+            "secret_key": "{{user `aws_secret_key` }}",
+            "region": "us-west-2",
+            "source_ami": "ami-806bf0b0",
+            "instance_type": "m1.small",
+            "ssh_username": "ubuntu",
+            "ami_name": "handbill-app chef server {{timestamp}}"
+            }],
+
+            "provisioners": [{
+              "type": "chef-solo",
+              "cookbook_paths": ["./vendor/cookbooks"],
+              "run_list": [ "ruby2-app-server" ]
+            }],
+    "post-processors": ["vagrant"]
+}
