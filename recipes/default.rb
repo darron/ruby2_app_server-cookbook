@@ -18,8 +18,8 @@
 # limitations under the License.
 #
 
-execute "apt-get-update" do
-  command "apt-get update"
+execute 'apt-get-update' do
+  command 'apt-get update'
 end
 
 include_recipe 'build-essential::default'
