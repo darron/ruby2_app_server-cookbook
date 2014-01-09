@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-# Cookbook Name:: ruby2-app-server
+# Cookbook Name:: ruby2_app_server
 # Attributes:: default
 #
 # Copyright (C) 2013, Darron Froese <darron@froese.org>

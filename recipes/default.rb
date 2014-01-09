@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-# Cookbook Name:: ruby2-app-server
+# Cookbook Name:: ruby2_app_server
 # Recipe:: default
 #
 # Copyright (C) 2013, Darron Froese <darron@froese.org>
@@ -28,4 +28,4 @@ include_recipe 'ruby2::default'
 
 include_recipe 'apache2::default'
 
-include_recipe 'passenger-apache2::default'
+include_recipe 'passenger_apache2::default'

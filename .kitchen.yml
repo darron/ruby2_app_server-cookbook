@@ -11,5 +11,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[ruby2-app-server::default]
+      - recipe[ruby2_app_server::default]
     attributes:

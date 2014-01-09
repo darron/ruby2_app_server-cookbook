@@ -14,7 +14,7 @@ Ubuntu 12.0.4LTS
     build-essential
     ruby2
     apache2
-    passenger-apache2
+    passenger_apache2
 
 Attributes
 ----------
@@ -28,14 +28,14 @@ There are lots of attributes in the [apache2](https://github.com/opscode-cookboo
 Recipes
 -------
 
-### ruby2-app-server::default
+### ruby2_app_server::default
 
 Builds a Passenger app server with Ruby 2.0.
 
 Testing
 -------
 
-[![Build Status](https://travis-ci.org/darron/ruby2-app-server-cookbook.png?branch=master)](https://travis-ci.org/darron/ruby2-app-server-cookbook)
+[![Build Status](https://travis-ci.org/darron/ruby2_app_server-cookbook.png?branch=master)](https://travis-ci.org/darron/ruby2_app_server-cookbook)
 
 The cookbook provides the following Rake tasks for testing:
 

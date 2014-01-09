@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 # Write integration tests with Serverspec - http://serverspec.org/
-describe 'ruby2-app-server::default' do
+describe 'ruby2_app_server::default' do
 
   describe package('ruby2.0') do
     it { should be_installed }

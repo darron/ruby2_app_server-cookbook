@@ -18,7 +18,7 @@
             "provisioners": [{
               "type": "chef-solo",
               "cookbook_paths": ["./vendor/cookbooks"],
-              "run_list": [ "ruby2-app-server" ]
+              "run_list": [ "ruby2_app_server" ]
             }],
     "post-processors": ["vagrant"]
 }
