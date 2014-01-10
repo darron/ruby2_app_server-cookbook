@@ -29,3 +29,8 @@ include_recipe 'ruby2::default'
 include_recipe 'apache2::default'
 
 include_recipe 'passenger_apache2::default'
+
+# Set Ruby2.0 as default.
+execute 'set ruby2.0 as alternatives' do
+  command 'update-alternatives --set ruby /usr/bin/ruby2.0 && update-alternatives --set gem /usr/bin/gem2.0'
+end

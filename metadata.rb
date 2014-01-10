@@ -4,7 +4,7 @@ maintainer       'Darron Froese'
 maintainer_email 'darron@froese.org'
 license          'Apache 2.0'
 description      'Installs/configures Ruby 2.0 / Apache / Passenger'
-version          '0.1.0'
+version          '0.2.0'
 recipe           'ruby2_app_server::default', 'Installs/configures Ruby 2.0 / Apache / Passenger'
 
 depends 'build-essential'
